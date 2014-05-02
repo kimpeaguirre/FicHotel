@@ -3,9 +3,13 @@
 	<head>
 		<title> Confirmed! </title>
 	</head>
+	<style type = "text/css">
+			body { background-color: pink; }
+	</style>
 	<body>
-		<h1> Greetings, <%= @nameofperson %>, <%= @email %>. Thank you for reserving. </h1>
-		<h2> You will be taking <%= @roomkind %> on  <%= @date %> </h2>
-
+		<h1> <%= @reserve.say_your_confirmation %> </h1>
 	</body>
 </html>
+
+
+

@@ -8,18 +8,18 @@
 	</head>
 	<h1> Reservations </h1>
 	<body>
-		<form method="POST" action="/confirm">
+		<form method="POST" action="/reserve">
 
-		<p> Name: </p>  <input type="text" name="nameofperson"> <br> <br>
-		<p> Choose a room: </p> <select name = "roomkind">
+		<label for ="nameofperson"> Name: </label>  <input type="text" name="nameofperson"> <br> <br>
+		<label for ="roomkind"> Choose a room: </label> 
+		<select name = "roomkind">
 		  <option value="Deluxe">Deluxe</option>
 		  <option value="Standard">Standard</option>
 		</select> <br> <br>
-		<p> For when? </p>  <input type="text" name="date"> <br> <br>
-		<p> *E-mail address: </p>
+		<label for ="date"> For when? </label>  <input type="text" name="date"> <br> <br>
+		<label for ="email"> *E-mail address: </label>
 		<input type="text" name="email"><br><br>
 		<p> <i> *You will receive a confirmation e-mail with the details provided. During check-in, please present to us the e-mail we have sent you.</i> <br> <br>
-
 		<input type="submit" value="SUBMIT"/>
 	</body>
 

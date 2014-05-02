@@ -6,7 +6,8 @@ class Room
 		@email = email
 	end
 
-	def say_my_name
-		"Congratulations, #{@nameofperson}, #{@email}. you will be taking #{@roomkind} on #{@date}."
+	def say_your_confirmation
+		"Congratulations, #{@nameofperson}, #{@email}. You will be taking #{@roomkind} on #{@date}."
 	end
+
 end

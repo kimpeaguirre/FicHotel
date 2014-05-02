@@ -1,15 +1,24 @@
 require 'sinatra'
+require './room.rb'
 
 get '/' do
 	erb :Homeviews
 end
 
-get '/confirm' do 
+get '/about' do
+	erb :about
+end
+
+get '/amenities' do
+	erb :amenities
+end
+
+get '/reserve' do 
 	erb :reserve
 end
 
-post '/confirm' do
-	@confirm = Room.new = params[:nameofperson], params[:roomkind], params[:date], params[:email]
+post '/reserve' do
+	@reserve = Room.new params[:nameofperson], params[:roomkind], params[:date], params[:email]
 	erb :confirm
 end
 
