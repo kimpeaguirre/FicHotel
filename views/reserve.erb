@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Reservation of Room </title>
+		<style type = "text/css">
+			body { background-color: pink; }
+		</style>
+	</head>
+	<h1> Reservations </h1>
+	<body>
+		<form method="POST" action="/confirm">
+
+		<p> Name: </p>  <input type="text" name="nameofperson"> <br> <br>
+		<p> Choose a room: </p> <select name = "roomkind">
+		  <option value="Deluxe">Deluxe</option>
+		  <option value="Standard">Standard</option>
+		</select> <br> <br>
+		<p> For when? </p>  <input type="text" name="date"> <br> <br>
+		<p> *E-mail address: </p>
+		<input type="text" name="email"><br><br>
+		<p> <i> *You will receive a confirmation e-mail with the details provided. During check-in, please present to us the e-mail we have sent you.</i> <br> <br>
+
+		<input type="submit" value="SUBMIT"/>
+	</body>
+
+</html>
